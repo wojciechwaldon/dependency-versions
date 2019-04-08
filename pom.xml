@@ -14,6 +14,7 @@
         <lombok.version>1.18.6</lombok.version>
         <spring.version>5.1.4.RELEASE</spring.version>
         <junit.version>4.12</junit.version>
+        <sl4j.version>1.7.26</sl4j.version>
         <!--        <junit.version>4.12</junit.version>-->
         <!--        <hibernate.version>5.3.7.Final</hibernate.version>-->
         <!--        <spring-data.version>2.1.1.RELEASE</spring-data.version>-->
@@ -24,6 +25,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${sl4j.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
